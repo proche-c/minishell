@@ -27,8 +27,8 @@ This project is part of the 42 curriculum and aims to deepen understanding of:
     - Double quotes (") to disable interpretation except for $
 - Environment variable expansion, including $? (exit status of last command)
 - Redirections:
-    - < input redirection
-    - > output redirection (overwrite)
-    - >> output redirection (append)
-    - << heredoc
+    - `<` input redirection
+    - `\>` output redirection (overwrite)
+    - `\>>` output redirection (append)
+    - `\<<` heredoc
 - Pipes (|) connecting commands  
