@@ -19,7 +19,7 @@ This project is part of the 42 curriculum and aims to deepen understanding of:
 - Functional command history using readline
 - Executes binaries found via PATH, or with relative/absolute paths
 - Signal handling:
-    - Ctrl-C → prints a new prompt on a new line
+    - `Ctrl-C` → prints a new prompt on a new line
     - Ctrl-D → exits the shell
     - Ctrl-\ → does nothing
 - Proper handling of:
