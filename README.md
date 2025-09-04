@@ -60,4 +60,28 @@ The following functions and system calls are allowed:
 - `include/` → header files
 - `libft/` → personal library
 
+## ⚙️ Makefile  
 
+The project comes with a Makefile that compiles `minishell`.  
+It supports the following rules:  
+
+- `make / make all` → builds the program
+- `make clean` → removes object files
+- `make fclean` → removes object files and the executable
+- `make re` → cleans and rebuilds
+- `make norme` → runs norminette on the source files
+- `make test` → rebuilds and runs ./minishell
+- `make leaks` → runs the program with leaks for debugging memory
+
+🔑 Note about `readline` **include paths**:  
+
+The Makefile includes two possible `CFLAGS` setups depending on where Homebrew is installed:  
+
+- For custom Homebrew in user directory:
+  ```make
+  CFLAGS = -Wall -Wextra -Werror -g $(INC) -I ~/.brew/opt/readline/include
+  ```
+- For standard Apple Silicon Homebrew (`M1/M2/M3`):
+  ```make
+  CFLAGS = -Wall -Wextra -Werror -g $(INC) -I /opt/homebrew/opt/readline/include
+  ```
