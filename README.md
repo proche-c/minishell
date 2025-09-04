@@ -7,7 +7,7 @@ It replicates the behavior of Bash for a subset of features while complying with
 
 This project is part of the 42 curriculum and aims to deepen understanding of:  
 
-- Process creation and management (fork, execve, wait, pipe, etc.)
+- Process creation and management (`fork`, `execve`, `wait`, `pipe`, etc.)
 - Input/output redirection and file descriptors
 - Signal handling
 - String parsing and environment variable expansion
@@ -17,18 +17,33 @@ This project is part of the 42 curriculum and aims to deepen understanding of:
 
 - Interactive prompt waiting for user input
 - Functional command history using readline
-- Executes binaries found via PATH, or with relative/absolute paths
+- Executes binaries found via `PATH`, or with relative/absolute paths
 - Signal handling:
     - `Ctrl-C` → prints a new prompt on a new line
-    - Ctrl-D → exits the shell
-    - Ctrl-\ → does nothing
+    - `Ctrl-D` → exits the shell
+    - `Ctrl-\` → does nothing
 - Proper handling of:
     - Single quotes (') to disable interpretation of metacharacters
-    - Double quotes (") to disable interpretation except for $
+    - Double quotes (") to disable interpretation except for `$`
 - Environment variable expansion, including $? (exit status of last command)
 - Redirections:
     - `<` input redirection
     - `>` output redirection (overwrite)
     - `>>` output redirection (append)
     - `<<` heredoc
-- Pipes (|) connecting commands  
+- Pipes (`|`) connecting commands
+- Built-in commands:  
+      - `echo` (with `-n`)
+      - `cd` (relative or absolute paths)
+      - `pwd`
+      - `export`
+      - `unset`
+      - `env`
+      - `exit`
+
+## 🛠️ Authorized Functions  
+
+The following functions and system calls are allowed:
+readline, rl_clear_history, rl_on_new_line, rl_replace_line, rl_redisplay, add_history, printf, malloc, free, write, access, open, read, close, fork, wait, waitpid, wait3, wait4, signal, sigaction, kill, exit, getcwd, chdir, stat, lstat, fstat, unlink, execve, dup, dup2, pipe, opendir, readdir, closedir, strerror, perror, isatty, ttyname, ttyslot, ioctl, getenv, tcsetattr, tcgetattr, tgetent, tgetflag, tgetnum, tgetstr, tgoto, tputs.
+
+Additionally, you may use your own libft.
