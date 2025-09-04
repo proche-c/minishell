@@ -33,13 +33,13 @@ This project is part of the 42 curriculum and aims to deepen understanding of:
     - `<<` heredoc
 - Pipes (`|`) connecting commands
 - Built-in commands:  
-      - `echo` (with `-n`)
-      - `cd` (relative or absolute paths)
-      - `pwd`
-      - `export`
-      - `unset`
-      - `env`
-      - `exit`
+      - `echo` (with `-n`)  
+      - `cd` (relative or absolute paths)  
+      - `pwd`  
+      - `export`  
+      - `unset`  
+      - `env`  
+      - `exit`  
 
 ## 🛠️ Authorized Functions  
 
