@@ -28,7 +28,7 @@ This project is part of the 42 curriculum and aims to deepen understanding of:
 - Environment variable expansion, including $? (exit status of last command)
 - Redirections:
     - `<` input redirection
-    - `\>` output redirection (overwrite)
-    - `\>>` output redirection (append)
-    - `\<<` heredoc
+    - `>` output redirection (overwrite)
+    - `>>` output redirection (append)
+    - `<<` heredoc
 - Pipes (|) connecting commands  
