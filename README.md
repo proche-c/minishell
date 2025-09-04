@@ -87,3 +87,23 @@ The Makefile includes two possible `CFLAGS` setups depending on where Homebrew i
   ```make
   CFLAGS = -Wall -Wextra -Werror -g $(INC) -I /opt/homebrew/opt/readline/include
   ```
+Adjust this depending on your environment.  
+
+## ▶️ Usage  
+
+```bash
+make
+./minishell
+```
+Once inside, you can run commands just like in Bash:  
+
+```bash
+minishell$ echo hello
+hello
+minishell$ ls -l | grep minishell > output.txt
+```
+To exit:  
+
+```bash
+minishell$ exit
+``` 
