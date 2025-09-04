@@ -78,10 +78,12 @@ It supports the following rules:
 The Makefile includes two possible `CFLAGS` setups depending on where Homebrew is installed:  
 
 - For custom Homebrew in user directory:
-  ``` make
+
+  ```make
   CFLAGS = -Wall -Wextra -Werror -g $(INC) -I ~/.brew/opt/readline/include
   ```
 - For standard Apple Silicon Homebrew (`M1/M2/M3`):
-  ``` make
+
+  ```make
   CFLAGS = -Wall -Wextra -Werror -g $(INC) -I /opt/homebrew/opt/readline/include
   ```
